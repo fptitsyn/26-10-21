@@ -8,10 +8,9 @@ if __name__ == "__main__":
     x = float(input("x: "))
     y = float(input("y: "))
 
-    s1 = a * c
-    s2 = x * y
+    s = x * y
 
-    if s1 < s2:
+    if a * c <= s or a * b <= c or b * c <= s:
         print("Кирпич пройдёт")
     else:
         print("Кирпич не пройдёт")
