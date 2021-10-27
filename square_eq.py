@@ -14,7 +14,10 @@ if __name__ == "__main__":
         if D > 0:
             x1 = (-b - sqrt(D)) / (2 * a)
             x2 = (-b + sqrt(D)) / (2 * a)
-            print(x1, x2)
+            if x1 != x2:
+                print(x1, x2)
+            else:
+                print("Both roots are equal and their value is", x1)
         elif D == 0:
             x = -b / (2 * a)
             print(x)
